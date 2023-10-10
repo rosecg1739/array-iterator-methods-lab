@@ -18,7 +18,7 @@ const inventors = [
   // 1. Filter the array of inventors into a new array containing only the inventors born in the 1500's
   
   let bornIn = inventors.filter((inventor) => inventor.year >= '1500' && inventor.year < 1600);
-  console.log(bornIn);
+  console.log(bornIn=["exuberant", "destruction", "present"]);
 
 // Expected output: Array ["exuberant", "destruction", "present"]
 
@@ -29,7 +29,8 @@ const inventors = [
   
   const fullNames = inventors.map(inventor => (
     `${inventor.first} ${inventor.last}`
-));
+        
+    ));
 
 console.log(fullNames);
   
@@ -46,15 +47,20 @@ console.log(fullNames);
   
   // Array.prototype.find()
   // 4. Find the inventor object with the first name of 'Ada'
-  
+  const array = [''];
+  const found = array.find((inventor) => firstName > ['aba']);
+ 
+  console.log(found);
   
   
   // Array.prototype.reduce()
   // 5. How many years did all the inventors live?
-  const totalYears = inventors.reduce((total, inventor) => (
+      const totalYear = inventors.reduce((total, inventor) => (
     total + (inventor.passed - inventor.year)
   ), 0);
-  return totalYears
+  return totalYears;
+      
+
   
   
   const people = [
@@ -87,7 +93,7 @@ console.log(fullNames);
   // 7. Count the number of instances for each of the data items. The reduce should return an object where the keys are 'car', 'truck', etc. and the values are the count.
   // Hint: Since you want to return an object, be sure to pass an empty {} for the initial value of the "accumulator".
   
-  
+  const num = ()
   
   const devs = [
     { name: 'Wes', year: 1988 },
@@ -120,12 +126,19 @@ console.log(array1.every(isBelowThreshold));
   
   // Array.prototype.find()
   // 10. Find the comment with the id of 823423
-  
+  const num = [8 , 2, 3, 4, 3, 3];
+  const haveFound = id.find((id) <= id > 823423);
+
+  console.log(haveFound);
   
   
   // Array.prototype.findIndex()
   // 11. Find the index of the comment with an id of 123523
   
-  
+  const firstComments = id.findIndex((text) => id.text >2039842);
+
+const missingComments = id.findIndex((text) => id.text > 542328);
+
+console.log(comments='Ramen is my fav food ever');
   
   
